@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Personal Information */
+fieldset:first-of-type {
+    background-color: #e0f7fa;
+    border-color: #00acc1;
+}
+
+fieldset:first-of-type legend {
+    color: #007c91;
+}
+
+/* Professional Objective */
+fieldset:nth-of-type(2) {
+    background-color: #e8f5e9;
+    border-color: #43a047;
+}
+
+fieldset:nth-of-type(2) legend {
+    color: #2e7d32;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Professional Experience */
+fieldset:nth-of-type(3) {
+    background-color: #fff3e0;
+    border-color: #fb8c00;
+}
+
+fieldset:nth-of-type(3) legend {
+    color: #e65100;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Academic Background */
+fieldset:nth-of-type(4) {
+    background-color: #f3e5f5;
+    border-color: #8e24aa;
+}
+
+fieldset:nth-of-type(4) legend {
+    color: #6a1b9a;
+}
+
+/* Skills */
+fieldset:nth-of-type(5) {
+    background-color: #ffebee;
+    border-color: #e53935;
+}
+
+fieldset:nth-of-type(5) legend {
+    color: #b71c1c;
+}
+
+/* Hobbies */
+fieldset:nth-of-type(6) {
+    background-color: #ede7f6;
+    border-color: #5e35b1;
+}
+
+fieldset:nth-of-type(6) legend {
+    color: #4527a0;
+}
+
+/* Contact Form */
+fieldset:nth-of-type(7) {
+    background-color: #f1f8e9;
+    border-color: #7cb342;
+}
+
+fieldset:nth-of-type(7) legend {
+    color: #33691e;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #33691e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e7d32;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .container {
+        width: 50%;
+    }
+}
+@media (min-width: 1024px){
+    .container {
+        width: 60%;
+    }
+}
