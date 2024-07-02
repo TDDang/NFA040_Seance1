@@ -14,6 +14,11 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centering h1 and other content */
+}
+
+h1 {
+    text-align: center;
 }
 
 fieldset {
@@ -22,12 +27,14 @@ fieldset {
     padding: 10px 20px;
     margin-bottom: 20px;
     background-color: #fff;
+    text-align: left;
 }
 
 legend {
     font-weight: bold;
     font-size: 1.2em;
     color: #333;
+    text-align: center;
 }
 
 /* Personal Information */
@@ -138,6 +145,8 @@ input[type="submit"] {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type="submit"]:hover {
@@ -149,13 +158,30 @@ input[type="submit"]:hover {
         width: 90%;
     }
 }
-@media (min-width: 768px) and (max-width: 1023px){
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .container {
         width: 50%;
     }
 }
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) {
     .container {
         width: 60%;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .row fieldset {
+        width: 48%;
+    }
+    .row-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .row-3 fieldset {
+        width: 30%;
     }
 }
